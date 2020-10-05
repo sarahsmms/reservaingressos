@@ -1,0 +1,108 @@
+#footer {
+	display: block;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	left: 0px;
+	bottom: -1180px;
+	z-index: 1;
+	background-color: #FFFFFF;
+}
+
+#mainFooter {
+	display: block;
+	width: 960px;
+	height: 100%;
+	margin: 0px auto;
+	background-color: #FFFFFF;
+	border-top: 1px solid #667;
+}
+
+.copyRight {
+	display: block;
+	width: 960px;
+	height: auto;
+	margin: 30px 0px 0px 0px;
+	border-top: 1px solid #667;
+}
+
+#contactUs {
+	display: block;
+	width: 184px;
+	height: auto;
+	margin: 13px 0px 20px 0px;
+	font: normal 14px/20px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #666;
+	background: #fff;
+
+}
+
+#copy {
+	display: block;
+	float: right;
+	width: 235px;
+	height: auto;
+	margin: -35px 0px 20px 0px;
+	font: normal 14px/20px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #666;
+	background: #fff;
+}
+
+#enderecoEmpresa {
+	display: block;
+	width: 184px;
+	height: auto;
+	margin: 0px 0px 20px 0px;
+	font: normal 14px/20px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #666;
+	background: #fff;
+}
+
+#nossasRedes {
+	display: block;
+	width: 184px;
+	height: auto;
+	margin: 0px 0px 5px 0px;
+	font: normal 14px/20px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #B2B2B2;
+	background: #fff;
+}
+
+.icoInstagram, .icoLinkedin, .icoTwitter {
+	float: left;
+}
+
+.homeFotter{
+	float: left;
+}
+
+#sobreNos {
+	display: block;
+	margin: 0px 0px 20px 0px;
+	font: normal 18px/30px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #555555;
+}
+
+
+.sobre {
+	display: block;
+	float: left;
+	width: 126px;
+	height: 80px;
+	margin: 40px 0px 0px 56px;
+}
+
+.sobre h1 {
+	display:block;
+	float:left;
+	width: 137px;
+	margin: 0px 20px 20px 0px;
+	font: normal 16px/20px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #0654AE;
+}

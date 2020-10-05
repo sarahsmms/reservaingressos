@@ -1,0 +1,153 @@
+<!-- container -->
+<div class="container">
+  <!-- main content -->
+  <div class="mainContent">
+    <!-- bloco esquerdo -->
+    <div class="bloco-esquerdo">
+      <h1><b>FORMULÁRIO</b></h1>
+      <div class="dados-pessoais">
+        <p class="info-dados-pessoais">DADOS PESSOAIS</p>
+      </div>
+      <!-- bloco dados da entrega -->
+			<div class="blocoDadosEntrega">
+				<!-- INFO DADOS DA ENTREGA -->
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-inline" >
+          <div class="form-group">
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" [ngModel]="usuario.nome" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="ultimoNome" id="ultimoNome" placeholder="Último Nome" [ngModel]="usuario.ultimoNome" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF" [ngModel]="usuario.cpf" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="dataNasc" id="dataNasc" placeholder="Data de nascimento" [ngModel]="usuario.dataNasc" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" [ngModel]="usuario.email" required>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="checkbox"  ngModel required> Adicionar acompanhante
+            </label>
+          </div>
+          <div class="acdiv">
+            <p class="dadosAcompanhante">ACOMPANHANTE 1</p>
+            <div class="form-group">
+              <input type="text" class="form-control" name="nomeAc" id="nomeAc" placeholder="Nome" [ngModel]="usuario.nomeAc" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="ultimoNomeAc" id="ultimoNomeAc" placeholder="Último Nome" [ngModel]="usuario.ultimoNomeAc" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="cpfAc" id="cpfAc" placeholder="CPF" [ngModel]="usuario.cpfAc" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="dataNascAc" id="dataNascAc" placeholder="Data de nascimento" [ngModel]="usuario.dataNascAc" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="emailAc" id="emailAc" placeholder="Email" [ngModel]="usuario.emailAc" required>
+            </div>
+          </div>
+          <p class="dadosEntrega">Dados da Entrega</p>
+          <div class="form-group">
+            <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP" ngModel required #cep="ngModel"
+            (blur)="consultaCEP($event.target.value, f)">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="rua" id="rua" placeholder="Endereço" ngModel required #rua="ngModel">
+          </div>
+          <select class="form-control" id="pais">
+            <option value="País" selected>País</option>
+            <option value="África do Sul">África do Sul</option>
+            <option value="Albânia">Albânia</option>
+            <option value="Alemanha">Alemanha</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="Antigua">Antigua</option>
+            <option value="Arábia Saudita">Arábia Saudita</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armênia">Armênia</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Austrália">Austrália</option>
+            <option value="Áustria">Áustria</option>
+            <option value="Azerbaijão">Azerbaijão</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrein">Bahrein</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Bélgica">Bélgica</option>
+            <option value="Benin">Benin</option>
+            <option value="Bermudas">Bermudas</option>
+            <option value="Botsuana">Botsuana</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Brunei">Brunei</option>
+            <option value="Bulgária">Bulgária</option>
+            <option value="Burkina Fasso">Burkina Fasso</option>
+            <option value="botão">botão</option>
+            <option value="Cabo Verde">Cabo Verde</option>
+            <option value="Camarões">Camarões</option>
+            <option value="Camboja">Camboja</option>
+            <option value="Canadá">Canadá</option>
+            <option value="Cazaquistão">Cazaquistão</option>
+            <option value="Chade">Chade</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+            <option value="Colômbia">Colômbia</option>
+            <option value="Congo">Congo</option>
+            <option value="Coréia do Sul">Coréia do Sul</option>
+            <option value="Costa do Marfim">Costa do Marfim</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Croácia">Croácia</option>
+            <option value="Dinamarca">Dinamarca</option>
+            <option value="Djibuti">Djibuti</option>
+            <option value="Dominica">Dominica</option>
+            <option value="EUA">EUA</option>
+            <option value="Egito">Egito</option>
+          </select>
+          <select class="form-control" id="estado">
+            <option value="Estado" selected>Estado</option>
+            <option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+          </select>
+          <div class="form-group">
+            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Tefefone" ngModel required>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <!-- fim bloco esquerdo -->
+  </div>
+   <!-- fim main content -->
+</div>
+
+<!-- fim container -->

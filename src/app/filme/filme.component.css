@@ -1,0 +1,147 @@
+.bloco-direito{
+  display: block;
+  width: 400px;
+	height:auto;
+  float: left;
+  margin: 55px 0px 0px 0px;
+  background-color:#fff;
+
+}
+
+#card {
+  width: 250px;
+  height: auto;
+}
+
+#imagemFilme {
+	float: left;
+	width: 158px;
+	height: 158px;
+	margin: 15px 10px 0px 25px;
+	background-color:#E0E0E0;
+}
+
+#corpoCard {
+  float: right;
+}
+
+#titulo {
+  float: right;
+  margin: 6px 0px 0px 156px;
+}
+
+.seu-ingresso{
+  display: block;
+  float: left;
+  width: 400px;
+  height: 90px;
+  background: #f1f1f1;
+}
+
+.info-dados-ingresso {
+  margin: 40px 0px 0px 50px;
+	font: normal 25px/25px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #262626;
+}
+
+.info-ingresso{
+  width:400px;
+	height:auto;
+	float:right;
+	background-color:#FFFFFF;
+}
+
+.inforFilme {
+	width: 400px;
+	height: 185px;
+}
+
+.dadosFilme {
+	width: 180px;
+	height:auto;
+  float:right;
+  margin: 42px 0px 0px 0px;
+	background-color:#FFFFFF;
+}
+
+.dadosFilme p {
+	margin: 5px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: justify;
+	color: #262626;
+}
+
+
+#nomeFilme {
+	float: left;
+	margin: 5px 0px 10px 0px;
+	font: normal 18px/25px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #262626;
+	width: 184px;
+	height: auto;
+}
+
+#valorFilme {
+	float: left;
+	margin: 0px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: justify;
+	color: #0856AF;
+	width: 140px;
+	height: auto;
+}
+
+.totalPagar {
+	float: left;
+	width: 365px;
+	height: auto;
+	border-top: 1px solid #666;
+	margin: 5px 0px 10px 20px;
+}
+
+.totalPagar p {
+	float: left;
+	margin: 40px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: left;
+	color: #262626;
+}
+
+#valorSubTotal{
+	float: right;
+	width:163px;
+	height:auto;
+	margin: 40px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: right;
+	color: #262626;
+}
+
+#frete {
+	float: left;
+	width: 188px;
+	height: auto;
+	margin: 26px 0px 0px 0px;
+}
+
+#valorFrete {
+	float: right;
+	width:163px;
+	height:auto;
+	margin: 28px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: right;
+	color: #262626;
+}
+
+#valorTotal {
+	float: right;
+	margin: 28px 0px 10px 0px;
+	font: normal 18px/18px Arial, Trebuchet MS, 'Tahoma', Helvetica, sans-serif;
+	text-align: right;
+	color: #0856AF;
+	width: 177px;
+	height: auto;
+}
